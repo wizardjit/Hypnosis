@@ -58,7 +58,7 @@ do
             local Cursor = Drawing.new('Triangle');Cursor.Thickness = 1;Cursor.Filled = true;Cursor.Visible = true;Cursor.ZIndex = math.huge;local CursorOutline = Drawing.new('Triangle');CursorOutline.Thickness = 1;CursorOutline.Filled = false;CursorOutline.Color = Color3.new(0, 0, 0);CursorOutline.Visible = true;CursorOutline.ZIndex = math.huge
             function Cursor_Update()
                 local Mouse_Position = UserInputService:GetMouseLocation();
-                Cursor.Color = Color3.fromRGB(115, 100, 215)
+                Cursor.Color = Color3.fromRGB(142,185,254)
                 Cursor.PointA = Vector2.new(Mouse_Position.X, Mouse_Position.Y);Cursor.PointB = Vector2.new(Mouse_Position.X + 16, Mouse_Position.Y + 6);Cursor.PointC = Vector2.new(Mouse_Position.X + 6, Mouse_Position.Y + 16) CursorOutline.PointA = Cursor.PointA;CursorOutline.PointB = Cursor.PointB;CursorOutline.PointC = Cursor.PointC
                 RunService.RenderStepped:Wait()
             end 
@@ -74,7 +74,7 @@ do
                 Position = UDim2.new(0.5, 0, 0.5, 0),
                 Size = UDim2.new(0, 336, 0, 390),
                 Image = "http://www.roblox.com/asset/?id=4996891970",
-                ImageColor3 = Color3.fromRGB(115, 100, 215),
+                ImageColor3 = Color3.fromRGB(142,185,254),
                 ScaleType = Enum.ScaleType.Stretch
             })
 
@@ -100,7 +100,7 @@ do
                 Parent = Background,
                 BackgroundTransparency = 1,
                 BorderSizePixel = 0,
-                ScrollBarImageColor3 = Color3.fromRGB(115, 100, 215),
+                ScrollBarImageColor3 = Color3.fromRGB(142,185,254),
                 Position = UDim2.new(0, 0, 0.130, 0),
                 Size = UDim2.new(0, 295, 0, 225),
                 BottomImage = "",
@@ -232,7 +232,7 @@ do
 
                 InjectButton.MouseEnter:Connect(function()
                     local tweenInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
-                    local tweenProperties = { Color = Color3.fromRGB(115, 100, 215) }
+                    local tweenProperties = { Color = Color3.fromRGB(142,185,254) }
                     local tween = Tween:Create(UIStroke, tweenInfo, tweenProperties)
                     tween:Play()
                 end)
@@ -283,3 +283,5 @@ do
 end
 return Loader
 --Loader:Initialize()
+
+--- updated loader
